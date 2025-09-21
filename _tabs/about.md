@@ -1,8 +1,36 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: About Me
+icon: fas fa-user
+order: 1
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Hi, I’m **Ahmed El-bisy**
+
+I’m a **bug hunter** with a strong interest in exploring web, mobile, and network security. My journey started with curiosity about how systems break, and now I actively research and practice penetration testing to strengthen my skills.
+
+**What I do:**
+
+- Perform web application penetration testing and bug bounty hunting.
+- Writeups on vulnerabilities, capture-the-flag (CTF) challenges, and labs.
+- Build security tools and create lists for researchers.
+
+**Current Focus:**
+
+- Deep-diving into **web asset security**.
+- Expanding knowledge into **mobile** and **network security**.
+- Building a **Python-based helper tools**.
+
+**Why I share my work:**  
+I believe in learning by teaching. Writing about bugs, labs, and tools not only helps me document my process but also contributes back to the security community.
+
+**Connect with me:**
+
+- [X (Twitter)](https://x.com/__bisy__)
+- [LinkedIn](https://linkedin.com/in/ahmed-elbisy-16b074173/)
+- [GitHub](https://github.com/bisy-1)
+- [HackerOne](https://hackerone.com/bisy)
+- [Gmail](mailto:bisy.v.1@gmail.com)
+
+---
+
+_"Breaking things to learn how to fix them."_ 🔐
