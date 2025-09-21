@@ -1,9 +1,3 @@
----
-title: About Me
-icon: fas fa-user
-order: 1
----
-
 Hi, I’m **Ahmed El-bisy**
 
 I’m a **bug hunter** with a strong interest in exploring web, mobile, and network security. My journey started with curiosity about how systems break, and now I actively research and practice penetration testing to strengthen my skills.
