@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>POC DEMO — Login (Non-functional)</title>
+<style>
+  :root{--bg:#f4f6fb;--panel:#fff;--accent:#0b6efd;--danger:#c0392b}
+  body{font-family:Inter,system-ui,Arial;margin:0;background:var(--bg);color:#111}
+  .banner{background:var(--danger);color:#fff;padding:10px 16px;text-align:center;font-weight:700}
+  .container{max-width:980px;margin:28px auto;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:0 16px}
+  .panel{background:var(--panel);padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(12,18,30,0.06)}
+  .brand{background:linear-gradient(180deg,#0b6efd,#1f80ff);color:#fff;display:flex;align-items:center;justify-content:center;border-radius:12px}
+  h1{margin:0 0 12px;font-size:18px}
+  .muted{color:#6b7280;margin-bottom:12px}
+  label{display:block;margin-top:12px;font-size:13px}
+  input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:6px}
+  .btn{margin-top:16px;padding:11px;border-radius:8px;background:var(--accent);color:#fff;border:0;width:100%;font-weight:700;cursor:not-allowed;opacity:.85}
+  .note{font-size:13px;color:#555;margin-top:12px}
+  .notice{margin-top:14px;padding:10px;border-radius:8px;background:#fff7f7;border:1px solid #ffdede;color:#7a1b1b}
+  footer{margin-top:18px;color:#666;font-size:13px}
+  @media (max-width:880px){.container{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="banner">POC DEMO — NOT THE REAL SITE — USE ONLY FOR REPORTING (NON-FUNCTIONAL)</div>
+
+  <div class="container">
+    <div class="panel brand">
+      <div style="text-align:center">
+        <div style="font-size:42px;font-weight:800;letter-spacing:1px">DEMO</div>
+        <div style="opacity:.95;margin-top:10px;font-size:14px">Proof-of-Concept Demonstration Page</div>
+        <div style="margin-top:16px;font-size:13px;color:#e9f2ff">This page intentionally does not connect to or impersonate any real service.</div>
+      </div>
+    </div>
+
+    <div class="panel" aria-labelledby="title">
+      <h1 id="title">Sign in — Demo (non-functional)</h1>
+      <div class="muted">This HTML-only page is a safe visual PoC. It does not submit credentials or contact any external servers.</div>
+
+      <form id="demoForm" onsubmit="return false;">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.test" autocomplete="off" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="password" autocomplete="off" required>
+
+        <button class="btn" title="Demo only (disabled)" disabled>Sign in (demo)</button>
+
+        <div class="notice" role="note">
+          This page is intentionally non-functional and safe for screenshots / video evidence. Do not use this page to collect credentials.
+        </div>
+
+        <div class="note">Suggested: capture screenshots, network logs, and a HAR file while reproducing the issue on the real target.</div>
+      </form>
+
+      <footer>POC created: <strong id="date"></strong></footer>
+    </div>
+  </div>
+
+<script>document.getElementById('date').textContent = new Date().toISOString();</script>
+<script>window.parent.postMessage({ type: 'child-ready' }, '*');</script>
+</body>
+</html>
